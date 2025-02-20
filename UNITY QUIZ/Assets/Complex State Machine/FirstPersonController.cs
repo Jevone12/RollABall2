@@ -18,6 +18,14 @@ public class FirstPersonController : MonoBehaviour
     [SerializeField]
     GameObject bullet;
     
+    bool hasJumped = false;
+    float ySpeed = 0;
+    [SerializeField]
+    float jumpHeight = 1.0f;
+    [SerializeField]
+    float gravityVal = 9.8f;
+
+
     Rigidbody rb;
     //Start is called once before the first execution of Update after 
     void Start()
@@ -50,7 +58,27 @@ public class FirstPersonController : MonoBehaviour
         float moveZ = movement.y;
 
         Vector3 actual_movement = (transform.forward * moveZ) + (transform.right * moveX);
+        
+        if (hasJumped)
+        {
+          hasJumped = false;
+          ySpeed = jumpHeight;
+        }
+        
+        ySpeed -= gravityVal * Time.deltaTime;
+        actual_movement.y = ySpeed;
+
+
         controller.Move(actual_movement * Time.deltaTime * speed);
+
+    }
+
+    void onJump()
+    {
+      if (controller.isGrounded)
+      {
+        hasJumped = true;
+      }
     }
       void OnMove(InputValue moveVal)
     {
