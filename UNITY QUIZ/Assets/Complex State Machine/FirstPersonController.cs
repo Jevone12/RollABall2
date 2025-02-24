@@ -36,9 +36,6 @@ public class FirstPersonController : MonoBehaviour
 
          rb = GetComponent<Rigidbody>();
         print("Welcome!");
-        print("The Red Cubes Are Enemies");
-        print("You Must Shoot And Destroy Them To Win The Game");
-
     }
     //Update is called once per frame
     void Update()
