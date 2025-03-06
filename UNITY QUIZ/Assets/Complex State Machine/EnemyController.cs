@@ -23,10 +23,12 @@ public class EnemyController : MonoBehaviour
     [SerializeField]
     float speed = 1.0f;
     private State currentState = State.Pace;
+
+    Animator anim;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -50,6 +52,7 @@ public class EnemyController : MonoBehaviour
 
     void OnPace()
     {
+        anim.SetBool("Following", false);
         //What do we do when we're pacing?
         print("I'm pacing!");
         target = route[routeIndex];
@@ -83,6 +86,7 @@ public class EnemyController : MonoBehaviour
 
     void OnFollow()
     {
+        anim.SetBool("Following", true);
         //What do we do when we're following?
         print("I'm following!");
         MoveTo(target);
