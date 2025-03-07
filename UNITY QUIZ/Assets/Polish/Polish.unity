@@ -301,11 +301,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71a7ac6d2dda9419aae34abb416c4e93, type: 3}
---- !u!1 &710281758 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2583007723501210065, guid: 71a7ac6d2dda9419aae34abb416c4e93, type: 3}
-  m_PrefabInstance: {fileID: 459734079}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &712394104
 GameObject:
   m_ObjectHideFlags: 0
@@ -487,11 +482,6 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
---- !u!1 &1029110303 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7801731424252641469, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
-  m_PrefabInstance: {fileID: 1932309839}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1182114107
 GameObject:
   m_ObjectHideFlags: 0
@@ -609,30 +599,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1985628539669793347, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
-      propertyPath: speed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1985628539669793347, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
-      propertyPath: route.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1985628539669793347, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
-      propertyPath: 'route.Array.data[1]'
-      value: 
-      objectReference: {fileID: 1029110303}
-    - target: {fileID: 1985628539669793347, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
-      propertyPath: 'route.Array.data[2]'
-      value: 
-      objectReference: {fileID: 2125082376}
-    - target: {fileID: 1985628539669793347, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
-      propertyPath: 'route.Array.data[3]'
-      value: 
-      objectReference: {fileID: 710281758}
-    - target: {fileID: 1985628539669793347, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
-      propertyPath: 'route.Array.data[4]'
-      value: 
-      objectReference: {fileID: 710281758}
     - target: {fileID: 8897647288205741195, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
       propertyPath: m_Name
       value: EnemyPrefab
@@ -682,11 +648,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
---- !u!1 &2125082376 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4987485544571310406, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
-  m_PrefabInstance: {fileID: 1932309839}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &8805355994063426647
 PrefabInstance:
   m_ObjectHideFlags: 0
