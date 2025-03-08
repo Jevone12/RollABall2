@@ -1,12 +1,13 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
+using TMPro;
 
 public class PlayerController : MonoBehaviour {
 
 	public float speed;
-	public Text countText;
-	public Text winText;
+	public TextMeshProUGUI countText;
+	public TextMeshProUGUI winText;
 
 	private Rigidbody rb;
 	private int count;
@@ -16,7 +17,6 @@ public class PlayerController : MonoBehaviour {
 		rb = GetComponent<Rigidbody>();
 		count = 0;
 		SetCountText ();
-		winText.text = "";
 	}
 
 	void FixedUpdate ()
@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour {
 
 	void OnTriggerEnter(Collider other) 
 	{
-		if (other.gameObject.CompareTag ( "enemies"))
+		if (other.gameObject.CompareTag ( "enemy"))
 		{
 			other.gameObject.SetActive (false);
 			count = count + 1;
@@ -42,9 +42,9 @@ public class PlayerController : MonoBehaviour {
 	void SetCountText ()
 	{
 		countText.text = "Count: " + count.ToString ();
-		if (count >= 9)
+		if (count >= 4)
 		{
-			winText.text = "You Win!";
+			winText.gameObject.SetActive(true);
 		}
 	}
 }
