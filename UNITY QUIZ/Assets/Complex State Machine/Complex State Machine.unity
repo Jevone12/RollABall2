@@ -226,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 1311520268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5843883, y: -0.007, z: 5.0032296}
+  m_LocalPosition: {x: 4.5843883, y: -0.09, z: 5.0032296}
   m_LocalScale: {x: 45, y: 1, z: 45}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -534,8 +534,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   route:
   - {fileID: 1802386995470963546}
-  routeIndex: 0
-  health: 10
   speed: 1
 --- !u!1 &1802386995470963546 stripped
 GameObject:
