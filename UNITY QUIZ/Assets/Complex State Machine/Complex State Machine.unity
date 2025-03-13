@@ -226,7 +226,7 @@ Transform:
   m_GameObject: {fileID: 1311520268}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.5843883, y: -0.09, z: 5.0032296}
+  m_LocalPosition: {x: 4.5843883, y: -0.02, z: 5.0032296}
   m_LocalScale: {x: 45, y: 1, z: 45}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -462,6 +462,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: b17e181111f244bebaf68ba31539eae0, type: 2}
+    - target: {fileID: 7467651695083075182, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8897647288205741195, guid: b58918a0a2fac4f8fa4e4263f78a797a, type: 3}
       propertyPath: m_Name
       value: EnemyPrefab
