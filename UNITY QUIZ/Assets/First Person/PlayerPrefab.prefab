@@ -387,3 +387,5 @@ MonoBehaviour:
   cam: {fileID: 2531750034319874502}
   BulletSpawner: {fileID: 2532963043741709664}
   bullet: {fileID: 0}
+  jumpHeight: 1
+  gravityVal: 9.8
